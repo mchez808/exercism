@@ -13,15 +13,3 @@ Your task is to write methods that return
 class HighScores(object):
     def __init__(self, scores):
         pass
-
-    def personal_best():
-        pass
-
-    def latest():
-        pass
-
-    def personal_top():
-        pass
-
-    def report():
-        pass
