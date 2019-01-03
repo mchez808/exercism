@@ -27,8 +27,11 @@ class HighScores(object):
 
     def report(scores):
         latest = latest(scores)
+        # latest = scores.scores[-1]
         personal_best = personal_best(scores)
+        # personal_best = max(scores.scores)
         if latest == personal_best:
             message = "Your latest score was {0}. That's your personal best!".format(latest)
         else:
             message = "Your latest score was {0}. That's {1} short of your personal best!".format(latest, personal_best-latest)
+        return message

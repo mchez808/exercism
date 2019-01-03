@@ -1,5 +1,5 @@
 {
-  "high_scores_test.py::HighScoreTest::test_message_for_new_personal_best": true,
-  "high_scores_test.py::HighScoreTest::test_message_for_repeated_personal_best": true,
-  "high_scores_test.py::HighScoreTest::test_message_when_latest_score_is_not_the_highest_score": true
+  "temp_test.py::HighScoreTest::test_message_for_new_personal_best": true,
+  "temp_test.py::HighScoreTest::test_message_for_repeated_personal_best": true,
+  "temp_test.py::HighScoreTest::test_message_when_latest_score_is_not_the_highest_score": true
 }
