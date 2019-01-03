@@ -1,13 +1,5 @@
 {
-  "high_scores_test.py::HighScoreTest::test_latest_score": true,
   "high_scores_test.py::HighScoreTest::test_message_for_new_personal_best": true,
   "high_scores_test.py::HighScoreTest::test_message_for_repeated_personal_best": true,
-  "high_scores_test.py::HighScoreTest::test_message_when_latest_score_is_not_the_highest_score": true,
-  "high_scores_test.py::HighScoreTest::test_personal_best": true,
-  "high_scores_test.py::HighScoreTest::test_personal_top": true,
-  "high_scores_test.py::HighScoreTest::test_personal_top_from_a_long_list": true,
-  "high_scores_test.py::HighScoreTest::test_personal_top_highest_to_lowest": true,
-  "high_scores_test.py::HighScoreTest::test_personal_top_when_there_are_less_than_3": true,
-  "high_scores_test.py::HighScoreTest::test_personal_top_when_there_is_a_tie": true,
-  "high_scores_test.py::HighScoreTest::test_personal_top_when_there_is_only_one": true
+  "high_scores_test.py::HighScoreTest::test_message_when_latest_score_is_not_the_highest_score": true
 }

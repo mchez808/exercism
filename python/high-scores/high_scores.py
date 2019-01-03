@@ -15,13 +15,13 @@ class HighScores(object):
         self.scores = scores
 
     def personal_best(scores):
-        return max(scores)
+        return max(scores.scores)
 
     def latest(scores):
-        return scores[-1]
+        return scores.scores[-1]
 
     def personal_top(scores):
-        temp_list = scores.copy()
+        temp_list = scores.scores.copy()
         temp_list.sort(reverse=True)
         return temp_list[:3]
 
