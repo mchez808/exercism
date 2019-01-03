@@ -26,10 +26,14 @@ class HighScores(object):
         return temp_list[:3]
 
     def report(scores):
-        latest = latest(scores)
-        # latest = scores.scores[-1]
-        personal_best = personal_best(scores)
-        # personal_best = max(scores.scores)
+        try:
+            latest = latest(scores)
+            personal_best = personal_best(scores)
+        except UnboundLocalError as err:
+            print("note: code not working exactly as I'd like. using work-around")
+            print(err)
+            latest = scores.scores[-1]
+            personal_best = max(scores.scores)
         if latest == personal_best:
             message = "Your latest score was {0}. That's your personal best!".format(latest)
         else:
