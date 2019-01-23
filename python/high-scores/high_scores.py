@@ -14,28 +14,20 @@ class HighScores(object):
     def __init__(self, scores):
         self.scores = scores
 
-    def personal_best(scores):
-        return max(scores.scores)
+    def personal_best(self):
+        return max(self.scores)
 
-    def latest(scores):
-        return scores.scores[-1]
+    def latest(self):
+        return self.scores[-1]
 
-    def personal_top(scores):
-        temp_list = scores.scores.copy()
-        temp_list.sort(reverse=True)
-        return temp_list[:3]
+    def personal_top(self):
+        return sorted(self.scores, reverse=True)[:3]
 
-    def report(scores):
-        try:
-            latest = latest(scores)
-            personal_best = personal_best(scores)
-        except UnboundLocalError as err:
-            print("note: code not working exactly as I'd like. using work-around")
-            print(err)
-            latest = scores.scores[-1]
-            personal_best = max(scores.scores)
+    def report(self):
+        latest = self.scores[-1]
+        personal_best = max(self.scores)
         if latest == personal_best:
             message = "Your latest score was {0}. That's your personal best!".format(latest)
         else:
-            message = "Your latest score was {0}. That's {1} short of your personal best!".format(latest, personal_best-latest)
+            message = "Your latest score was {0}. That's {1} short of your personal best!".format(latest, personal_best - latest)
         return message
